@@ -1,0 +1,3 @@
+[Cliente] --GET /productos--> [API] --consulta--> [DB]
+[Cliente] <-- JSON productos -- [API]
+El cliente pide productos, la API consulta la BD y devuelve JSON.

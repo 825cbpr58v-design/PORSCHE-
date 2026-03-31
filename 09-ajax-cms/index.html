@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PORSCHE CLÁSICOS</title>
+</head>
+<body>
+<h1>PORSCHE(demo API)</h1>
+<ul id="posts"></ul>
+<script>
+async function cargar() {
+const res = await fetch('https://www.porsche.com/mexico/accessoriesandservice/classic/models/');
+const posts = await res.json();
+const ul = document.querySelector('#posts');
+ul.innerHTML = posts.map(p => `<li><strong>${p.title}</strong><br>${p.body}</li>`).join('');
+}
+cargar();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PORSCHE Gt3rs</title>
+</head>
+<body>
+<h1>PORSCHE (consulta precios)</h1>
+<ul id="productos"></ul>
+<script>
+// Simula "respuesta del back" en el front
+const datos = [
+{ id:1, nombre:'Posche gt3rs', precio:$4,778,000 MXN },
+{ id:2, nombre:'Porsche Taycan', precio: $2,450,000 MXN }
+];
+const ul = document.querySelector('#productos');
+ul.innerHTML = datos.map(p => `<li>${p.nombre} - $${p.precio}</li>`).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Selector por etiqueta */
+p { font-family: system-ui, Arial, sans-serif; line-height: 1.6; }
+/* Selector por clase */
+.destacado { background: #fff4aed7; padding: 8px 12px; border-radius: 8px; }
+.nota { color: #0b7285; border-left: 4px solid #11373d; padding-left: 8px; }
+/* Selector por id */
+#principal { color: #111827; letter-spacing: 0.5px; }
+/* Enlaces */
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.warning { background: #b60701; color: #dadfee; padding: 6px 10px; border-radius: 6px; }
